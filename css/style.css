@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3E4F60;
+  }
+  * {
+    border: 0;
+  }
+  
+  /*Navigation Styles*/
+  
+  nav ul {
+    width: 100%;
+    height: 3rem;
+    background: #3E4F60;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0rem 4rem;
+    font-size: .8rem;
+    font-weight: bold;
+    flex-flow: wrap;
+    margin: 0;
+    border: 0;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+  }
+  nav ul li:nth-child(1) {
+    margin-right: auto;
+  }
+  nav a {
+    color: #BBCADA;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+   color:#F0EEE1;
+   cursor: pointer;
+  }
+  
+  /* Hero Styles */
+  
+  #hero {
+    width: 100%;
+    margin: 0 auto;
+    height: 450px;
+    background:#3E4F60;
+    color:white;
+    display: flex;
+    text-align: center;
+  }
+  #lead_text {
+    margin: 5% auto;
+  }
+  #lead_text h2 {
+    font-size: 2rem;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+  #lead_text h1 {
+    font-size: 6rem;
+    margin: 0% 0% 10% 0%;
+    color: #F99F1C;
+  }
+  #get_started {
+    padding: 0.7rem;
+    background: #3E4F60;
+    color: #BBCADA;
+    font-weight: bold;
+    border: 4px solid #BBCADA;
+  }
+  #get_started:hover {
+    cursor: pointer;
+    color: #F0EEE1;
+  }
+  
+  /*Three section ***/
+  #column {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    color: #3E4F60;
+  
+  }
+  .column_1 {
+    flex: 1;
+    padding: 1rem
+  }
+  .bordered {
+    border-right: 1px solid #F99F1C;
+  }
+  
+
+  
+
+  /* Footer Styles **/
+  footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #3E4F60;
+    color: #BBCADA;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  
+  /***** MEDIA QUERIES FOR RESPONSIVENES ***/
+  @media screen and (max-width: 700px) {
+    #column {
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .column_1 {
+      flex: 1;
+      padding: 0.5rem
+    }
+    .unbordered {
+      border-right: 1px solid #F99F1C;
+    }
+  
+   
