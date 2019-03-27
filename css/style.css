@@ -229,6 +229,9 @@ body {
     .unbordered {
       border-right: 1px solid #F99F1C;
     }
+    #col_content {
+        display: none;
+    }
 
     /** Log in **/
   #two_col {
@@ -237,10 +240,7 @@ body {
   
   
   #two_col .col_1{
-    flex: 2;
-    background: #F99F1C;
-    box-sizing: border-box;
-    padding: 1rem;
+    display: none
   }
   
   #two_col .col_2{
