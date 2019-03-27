@@ -1,14 +1,77 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-</head>
-<body>
+    <title>Sign Up for SendIT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+  </head>
+  <body>
+   <nav>
+     <ul id="#nav">
+       <li><a href="index.html">SendIT</a></li>
+       <li><a href="login.html">Login</a></li>
+       <li><a href="sign_up.html">Sign Up</a> </li>
+     </ul>
+   </nav>
+
+   <div id="two_col">
+    <div class="col col_1">
     
-</body>
+    </div>
+    <div id="col_content">
+        <h2>KEEP CALM AND</h2>
+        <h1>JOIN US</h1>
+        <hr>
+        <p>We are the best delivery company on the planet earth. </p>
+    </div>
+    <div class="col col_2">
+        <form method="POST" id="signup_form">
+          <h2>SIGN UP:</h2>
+          <div>
+              <label for="firstname">First Name*:</label><br/>
+            <input type="text" name="firstname" id="firstname" required>
+          </div>
+          <div>
+              <label for="lastname">Last Name*:</label><br/>
+            <input type="text" name="lastname" id="lastname" required>
+          </div>
+          <div>
+              <label for="othernames">Other Names*:</label><br/>
+            <input type="text" name="othernames" id="othernames" required>
+          </div>
+          <div>
+              <label for="username">Username*:</label><br/>
+            <input type="text" name="username" id="username" required>
+          </div>
+          <div>
+              <label for="email">Email*:</label><br/>
+            <input type="email" name="email" id="email" required>
+            </div>
+          <div>
+            <label for="email">Password*:</label><br/>
+          <input type="password" name="password" id="password"  required>
+          </div>
+          <button type="submit" name="submit" id="btn_login" value="submit">Sign up</button>
+        </form>
+        <div class="center">
+          <p>
+            Already have an account?
+          </p>
+          <p>
+            <a href="login.html">Log in</a>
+          </p>
+        </div>
+       
+      </div>
+   </div>
+   <footer>
+     <div id="footer">
+       <h4> &copy; SendIT</h4>
+       <h5>Made with love by Olusola</h5>
+     </div>
+   </footer>
+   <script src="js/signup.js"></script>
+  </body>
 </html>
