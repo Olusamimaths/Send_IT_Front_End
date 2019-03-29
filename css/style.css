@@ -93,6 +93,17 @@ body {
     flex: 1;
     padding: 1rem
   }
+  .column_1 .icons {
+    width: 6rem;
+    height: auto;
+    margin: auto 4rem;
+    border: 2px solid #F99F1C;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+  #how_it_works {
+    padding: 2rem;
+  }
   .bordered {
     border-right: 1px solid #F99F1C;
   }
@@ -216,10 +227,23 @@ body {
   }
   
   /***** MEDIA QUERIES FOR RESPONSIVENES ***/
+  @media screen and (max-width: 900px){
+    .column_1 .icons {
+      width: 4rem;
+      height: auto;
+      margin-top: 2rem;
+    }
+  }
   @media screen and (max-width: 700px) {
     #column {
       display: flex;
       flex-direction: column;
+    }
+
+    .column_1 .icons {
+      width: 6rem;
+      height: auto;
+      margin-top: 2rem;
     }
 
     #hero {
