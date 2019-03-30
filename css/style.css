@@ -208,11 +208,18 @@ body {
     color:#3E4F60;
     text-decoration: none;
   }
+
   
   .center a:hover {
     color: #BBCADA;
    cursor: pointer;
   }
+
+  #error_message {
+    color: red;
+    font-size: 1rem;
+  }
+
   
 
   /* Footer Styles **/
