@@ -30,6 +30,7 @@
         <form method="POST" id="signup_form">
           <h2>SIGN UP:</h2>
           <div>
+              <p id="error_message"></p>
               <label for="firstname">First Name*:</label><br/>
             <input type="text" name="firstname" id="firstname" required>
           </div>
@@ -50,10 +51,10 @@
             <input type="email" name="email" id="email" required>
             </div>
           <div>
-            <label for="email">Password*:</label><br/>
+            <label for="password">Password*:</label><br/>
           <input type="password" name="password" id="password"  required>
           </div>
-          <button type="submit" name="submit" id="btn_login" value="submit">Sign up</button>
+          <button type="button" name="submit" id="btn_login" value="submit" onclick="postData()">Sign up</button>
         </form>
         <div class="center">
           <p>
@@ -72,6 +73,6 @@
        <h5>Made with love by Olusola</h5>
      </div>
    </footer>
-   <script src="js/signup.js"></script>
+   <script src="js/sign_up.js"></script>
   </body>
 </html>

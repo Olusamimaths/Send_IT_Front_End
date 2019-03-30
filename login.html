@@ -29,14 +29,15 @@
         <form action="" method="POST" id="login_form">
           <h2>LOG IN:</h2>
           <div>
+            <p id="error_message"></p>
             <label for="email">Email:</label><br/>
           <input type="email" name="email" id="email" required>
           </div>
           <div>
-            <label for="email">Password:</label><br/>
+            <label for="password">Password:</label><br/>
           <input type="password" name="password" id="password" required>
           </div>
-          <button type="submit" name="submit" id="btn_login">Log in</button>
+          <button type="button" name="submit" id="btn_login" onclick="postData()">Log in</button>
         </form>
         <div class="center">
           <p>
