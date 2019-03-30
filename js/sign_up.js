@@ -38,7 +38,16 @@ let data = {
     let status = res.status;
     if(status != 200) {
         document.getElementById('error_message').innerHTML = res.message;
+    } else {
+      // setting local storage
+      localStorage.setItem("token", res.data[0].token);
+      localStorage.setItem("username",  res.data[0].username)
+      // display success message
+      document.getElementById('success').innerHTML = res.message;
+        window.location.href = "profile.html";
     }
+
+    // an error occured
     if(error){
         document.getElementById('error_message').innerHTML = error;
     }
