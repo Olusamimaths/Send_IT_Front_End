@@ -226,15 +226,31 @@ body {
     padding: 1rem;
   }
 
+  /* Create Order page */
+#two_col_order {
+  display: flex;
+  height: auto;
+}
+
+
+#two_col_order .col_1{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+#two_col_order .col_2{
+  flex: 1;
+  box-sizing: border-box;
+}
+
   /* Profile Page */
   #actions {
     padding: 1rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  #profile_body {
-    background-color: aliceblue;
+    background-color: rgb(197, 221, 247)
   }
   .btn_action {
     padding: 0.7rem;
@@ -253,11 +269,17 @@ body {
   #profile_column .col_1, #profile_column .col_2 , #profile_column .col_3{
     flex: 1;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center
   }
   
   #profile_column .col_2 h1, #profile_column .col_3 h1{
-    font-size: 4rem;
+    font-size: 7rem;
     color: #F99F1C;
+    border: 1px solid #3E4F60;
+    padding: 1rem;
+    border-radius: 50%;
   }
   #welcome {
     margin: 2rem;
