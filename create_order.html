@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a Parcel Delivery Order</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+  </head>
+  <body>
+   <nav>
+     <ul id="#nav">
+       <li><a href="index.html">SendIT</a></li>
+       <li><a href="profile.html">My Profile</a></li>
+     </ul>
+   </nav>
+
+   <div id="two_col_order">
+    <div class="col_1">
+        <form action="" method="POST" id="create_order_form">
+            <h2>CREATE A DELIVERY ORDER:</h2>
+            <div>
+                <label for="Weight">Weight*:</label><br/>
+              <input type="text" name="Weight" id="weight" required>
+            </div>
+            <div>
+                <label for="from">From*:</label><br/>
+              <input type="text" name="from" id="from" required>
+            </div>
+            <div>
+                <label for="to">To*:</label><br/>
+              <input type="text" name="to" id="to" required>
+            </div>
+            <div>
+                <label for="to">Current Location*:</label><br/>
+              <input type="text" name="currentLocation" id="currentLocation" required>
+            </div>
+            <button type="submit" name="submit" id="btn_login">Create order</button>
+          </form>
+          </div>
+    <div class="col_2">
+        <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+    </style>
+              <div id="map"></div>
+                  <script>
+                    let map;
+                    function initMap() {
+                      map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: -34.397, lng: 150.644},
+                        zoom: 8
+                      });
+                    }
+                  </script>
+      </div>
+   </div>
+   <footer>
+     <div id="footer">
+       <h4> &copy; SendIT</h4>
+       <h5>Made with love by Olusola</h5>
+     </div>
+   </footer>
+   <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1xwoXWPadVUh8o8e0-de3yID6IQ8_Zdo&callback=initMap">
+</script>
+<script src="js/create_order.js"></script>
+  </body>
+</html>

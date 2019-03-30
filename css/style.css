@@ -215,6 +215,24 @@ body {
     padding: 1rem;
   }
 
+  /* Create Order page */
+#two_col_order {
+  display: flex;
+  height: auto;
+}
+
+
+#two_col_order .col_1{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+#two_col_order .col_2{
+  flex: 1;
+  box-sizing: border-box;
+}
+
   /* Profile Page */
   #actions {
     padding: 1rem;
