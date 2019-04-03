@@ -30,20 +30,18 @@ const result = fetch(url, {
     if(status != 200) {
         document.getElementById('error_message').innerHTML = res.message;
     } else {
+            // setting local storage
+        localStorage.setItem("token", res.data[0].token);
+        localStorage.setItem("user_id", res.data[0].id);
+        localStorage.setItem("username", res.data[0].username)
+        // send success message
         document.getElementById('success').innerHTML = res.message;
-        window.location.href = "profile.html";
+        // redirect to profile page
+         window.location.href = "profile.html";
     }
     if(error){
         document.getElementById('error_message').innerHTML = error;
     }
-
-    let token = res.data[0].token;
-    let username = res.data[0].username;
-    
-    // setting local storage
-    localStorage.setItem("token", token);
-    localStorage.setItem("username", username)
-
   })
   .catch(e => console.log(e))
 
