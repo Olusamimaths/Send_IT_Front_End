@@ -348,7 +348,14 @@ body {
     #col_content {
         display: none;
     }
-
+  /* All orders */
+.all_orders {
+  list-style-type: disc;
+  font-size: 1rem
+}
+.all_orders li {
+  font-size: 2rem
+}
     /** Log in **/
   #two_col {
     flex-direction: column;
