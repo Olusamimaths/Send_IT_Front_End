@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
   </head>
-  <body>
+  <body onload="getData()">
    <nav>
      <ul id="#nav">
        <li><a href="index.html">SendIT</a></li>
@@ -27,8 +27,9 @@
           </form>
           </div>
     <div class="col_2">
-             
-      </div>
+          <h1>Details:</h1>  
+        <div id="detail_container"></div>
+     </div>
    </div>
    <footer>
      <div id="footer">
@@ -36,5 +37,7 @@
        <h5>Made with love by Olusola</h5>
      </div>
    </footer>
+   
+   <script src="js/order_details.js"></script>
   </body>
 </html>
