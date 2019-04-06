@@ -5,9 +5,6 @@ const username = localStorage.getItem("username");
 const url = `https://sendit-olusola.herokuapp.com/api/v1/users/${user_id}/parcels`;
 
 function getData() {
-// clearing up the error message 
-// document.getElementById('error_message').innerHTML = "";
-
 const result = fetch(url, {
     credentials: 'same-origin', // 'include', default: 'omit'
     method: 'GET', // 'GET', 'PUT', 'DELETE', etc.
@@ -31,7 +28,7 @@ const result = fetch(url, {
       // create a list element
       let node = document.createElement("h3");
       let parcel_link = `https://sendit-olusola.herokuapp.com/api/v1/parcels/${id}`;
-      node.innerHTML += `<a href="order_details.html?orderId=${id}">Order ${id} </a>`;
+      node.innerHTML += `<a href="order_details_parsed.html?orderId=${id}">Order ${id} </a>`;
       document.getElementById('parcel_list').appendChild(node)
     })
 

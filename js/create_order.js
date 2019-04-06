@@ -2,8 +2,9 @@ const token = localStorage.getItem("token");
 const url = 'https://sendit-olusola.herokuapp.com/api/v1/parcels';
 
 function postData() {
-// clearing up the error message 
+// clearing up the error and success messages
 document.getElementById('error_message').innerHTML = "";
+document.getElementById('success').innerHTML = "";
 // get the html form elements
 const weight = document.getElementById("weight").value;
 const from = document.getElementById("from").value;
