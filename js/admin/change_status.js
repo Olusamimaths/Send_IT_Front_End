@@ -1,8 +1,11 @@
 const isAdmin = localStorage.getItem("isAdmin");
 if(isAdmin == 'false') {
     window.location.href = "../profile.html"
-} 
+} else if(isAdmin == ''){
+  window.location.href = '../login.html'
+}
 
+console.log(isAdmin)
 function postData() {
     const token = localStorage.getItem("token");
     const parcelId = document.getElementById('order_id').value
