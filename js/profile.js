@@ -54,6 +54,7 @@ const result = fetch(url, {
 
   })
   .catch(e => {
+    console.log("Couldn't not fetch data from sendit")
     window.location.href = "login.html"
   })
 }
