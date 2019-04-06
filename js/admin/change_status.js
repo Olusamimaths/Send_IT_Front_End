@@ -1,15 +1,20 @@
+const isAdmin = localStorage.getItem("isAdmin");
+if(isAdmin == 'false') {
+    window.location.href = "../profile.html"
+} 
+
 function postData() {
     const token = localStorage.getItem("token");
     const parcelId = document.getElementById('order_id').value
-    const url = `https://sendit-olusola.herokuapp.com/api/v1/parcels/${parcelId}/destination`;
+    const url = `https://sendit-olusola.herokuapp.com/api/v1/parcels/${parcelId}/status`;
 // clearing up the error and success messages
 document.getElementById('error_message').innerHTML = "";
 document.getElementById('success').innerHTML = "";
     
-const destination = document.getElementById("destination").value;
+const status =document.querySelector('input[name="status"]:checked').value;;
 
 let data = {
-  to: destination
+  status
 }
 if(parcelId){
   const result = fetch(url, {
@@ -29,7 +34,6 @@ if(parcelId){
         document.getElementById('error_message').innerHTML = res.message;
     } else {
         document.getElementById('success').innerHTML = res.data[0].message + ` (id: ${parcelId})`;
-        document.getElementById("destination").value = "";
         document.getElementById("order_id").value = "";
 
     }

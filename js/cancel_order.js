@@ -17,7 +17,6 @@ document.getElementById('success').innerHTML = "";
           })
           .then(response => response.json())
           .then(res => {
-              console.log(res)
             let error = res.error;
             let status = res.status;
             if(status != 200) {

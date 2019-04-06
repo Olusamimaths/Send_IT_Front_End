@@ -307,6 +307,20 @@ body {
     color: rgb(85, 10, 10)
   }
 
+  #hor_links {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 1rem;
+  }
+
+  #hor_links li a {
+    text-decoration: none;
+  }
+  .admin_btn {
+    background-color: #3E4F60;
+  }
+
   /***** MEDIA QUERIES FOR RESPONSIVENES ***/
   @media screen and (max-width: 900px){
     .column_1 .icons {

@@ -14,11 +14,11 @@
             <li><a href="../profile.html">My Profile</a></li>
           </ul>
         </nav>
-   <h1 id="welcome">Welcome Admin</h1>
-
    <div id="two_col_order">
 
     <div class="col_1">
+      <p id="error_message"></p>
+      <p id="success"></p>
         <form action="" method="POST">
             <h2>CHANGE THE STATUS OF AN ORDER:</h2>
             <div>
@@ -26,10 +26,12 @@
               <input type="text" name="order_id" id="order_id" required>
             </div>
             <div>
-                <label for="destination">New Status*:</label><br/>
-              <input type="text" name="destination" id="destination" required>
+                <label for="status">New Status*:</label><br/>
+                <input type="radio" name="status" value="transit" checked> Transit<br>
+                <input type="radio" name="status" value="delivered"> Delivered<br>
+                <input type="radio" name="status" value="placed"> Placed
             </div>
-            <button type="submit" name="create_order" id="btn_login">Update Order</button>
+            <button type="button" name="create_order" id="btn_login" onclick="postData()">Update Order</button>
           </form>
           </div>
     <div class="col_2">
@@ -43,4 +45,5 @@
      </div>
    </footer>
   </body>
+  <script src="../js/admin/change_status.js"></script>
 </html>

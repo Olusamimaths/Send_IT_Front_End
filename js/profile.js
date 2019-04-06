@@ -6,9 +6,19 @@ if(username) {
 
 const url = `https://sendit-olusola.herokuapp.com/api/v1/users/${user_id}/parcels`;
 
+function showAdminLinks(isAdmin) {
+  if(isAdmin === 'true'){
+    document.getElementById("admin_links").innerHTML = `
+      <ul id="hor_links">
+        <li><a href="admin/change_status.html" class="btn_action admin_btn">Change Order Status</a></li>
+        <li><a href="admin/present_location.html" class="btn_action admin_btn">Change Order Current Location</a></li>
+      <ul>
+    `
+  } 
+}
+
 function getData() {
-// clearing up the error message 
-// document.getElementById('error_message').innerHTML = "";
+  showAdminLinks(isAdmin)
 
 const result = fetch(url, {
     credentials: 'same-origin', // 'include', default: 'omit'
