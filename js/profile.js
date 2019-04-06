@@ -34,7 +34,7 @@ const result = fetch(url, {
       // create a list element
       let node = document.createElement("li");
       let parcel_link = `https://sendit-olusola.herokuapp.com/api/v1/parcels/${id}`;
-      node.innerHTML += `<a href="order_details.html?orderId=${id}">Order ${id} </a>`;
+      node.innerHTML += `<a href="order_details_parsed.html?orderId=${id}">Order ${id} </a>`;
       document.getElementById('parcel_list').appendChild(node)
     })
 
