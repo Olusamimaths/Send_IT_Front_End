@@ -1,6 +1,8 @@
 if(username) {
     document.getElementById("logged_in_user").innerHTML = username;
-} 
+} else {
+  window.location.href = "login.html"
+}
 
 const url = `https://sendit-olusola.herokuapp.com/api/v1/users/${user_id}/parcels`;
 
@@ -41,9 +43,9 @@ const result = fetch(url, {
     // })
 
   })
-  .catch(e => console.log(e))
-
-  console.log(result)
+  .catch(e => {
+    window.location.href = "login.html"
+  })
 }
 
 

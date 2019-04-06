@@ -23,8 +23,6 @@ const result = fetch(url, {
   })
   .then(response => response.json())
   .then(res => {
-    console.log(res)
-
     let error = res.error;
     let status = res.status;
     if(status != 200) {
@@ -44,8 +42,6 @@ const result = fetch(url, {
     }
   })
   .catch(e => console.log(e))
-
-  console.log(result)
 }
 
 
