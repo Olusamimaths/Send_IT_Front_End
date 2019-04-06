@@ -33,6 +33,7 @@ const result = fetch(url, {
         localStorage.setItem("token", res.data[0].token);
         localStorage.setItem("user_id", res.data[0].id);
         localStorage.setItem("username", res.data[0].username)
+        localStorage.setItem("isAdmin", res.data[0].isAdmin)        
         // send success message
         document.getElementById('success').innerHTML = res.message;
         // redirect to profile page

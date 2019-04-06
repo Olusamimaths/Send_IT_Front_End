@@ -1,7 +1,7 @@
 const user_id = localStorage.getItem("user_id");
 const token = localStorage.getItem("token");
 const username = localStorage.getItem("username");
-
+const isAdmin = localStorage.getItem("isAdmin");
 
 function getDeliveredOrders(dataObject){
     let statusArr = dataObject.map(a => a[0].status)
