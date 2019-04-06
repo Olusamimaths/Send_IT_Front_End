@@ -18,6 +18,8 @@
    <div id="two_col_order">
     <div class="col_1">
         <form action="" method="POST">
+          <p id="error_message"></p>
+          <p id="success"></p>
             <h2>CHANGE THE DESTINATION OF AN ORDER:</h2>
             <div>
                 <label for="order_id">Order ID*:</label><br/>
@@ -27,7 +29,7 @@
                 <label for="destination">New Destination*:</label><br/>
               <input type="text" name="destination" id="destination" required>
             </div>
-            <button type="submit" name="create_order" id="btn_login">Update Order</button>
+            <button type="button" name="create_order" id="btn_login" onclick="postData()">Update Order</button>
           </form>
           </div>
     <div class="col_2">
@@ -40,5 +42,6 @@
        <h5>Made with love by Olusola</h5>
      </div>
    </footer>
+   <script src="js/destination.js"></script>
   </body>
 </html>

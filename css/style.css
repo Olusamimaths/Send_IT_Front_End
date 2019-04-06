@@ -297,6 +297,16 @@ body {
     text-decoration: underline;
   }
   
+  #detail_list {
+    list-style-type: disc;
+    font-size: 1rem;
+  }
+
+  .bolded {
+    font-weight: bold;
+    color: rgb(85, 10, 10)
+  }
+
   /***** MEDIA QUERIES FOR RESPONSIVENES ***/
   @media screen and (max-width: 900px){
     .column_1 .icons {
@@ -348,7 +358,14 @@ body {
     #col_content {
         display: none;
     }
-
+  /* All orders */
+.all_orders {
+  list-style-type: disc;
+  font-size: 1rem
+}
+.all_orders li {
+  font-size: 2rem
+}
     /** Log in **/
   #two_col {
     flex-direction: column;

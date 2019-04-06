@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
   </head>
-  <body>
+  <body onload="getData()">
    <nav>
      <ul id="#nav">
        <li><a href="index.html">SendIT</a></li>
@@ -17,15 +17,8 @@
 
    <div id="two_col_order">
     <div class="col_1">
-        <form action="" method="POST" id="order_details_form">
-            <h2>SEE THE DETAILS OF A DELIVERY ORDER:</h2>
-            <div>
-                <label for="order_id">Order Id*:</label><br/>
-              <input type="text" name="order_id" id="order_id" required>
-            </div>
-            <button type="button" name="submit" id="btn_login" onclick="getData()">Get order details</button>
-          </form>
-          </div>
+        <h1>DETAILS FOR ORDER <span id="order_id"></span></h1>
+     </div>
     <div class="col_2">
           <h1>Details:</h1>  
         <div id="detail_container"></div>
@@ -38,6 +31,6 @@
      </div>
    </footer>
    
-   <script src="js/order_details.js"></script>
+   <script src="js/order_details_parsed.js"></script>
   </body>
 </html>

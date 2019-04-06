@@ -1,9 +1,10 @@
 const url = 'https://sendit-olusola.herokuapp.com/api/v1/auth/login';
 
 function postData() {
-// clearing up the error message 
+// clearing up the error and success messages
 document.getElementById('error_message').innerHTML = "";
-
+document.getElementById('success').innerHTML = "";
+    
 const email = document.getElementById("email").value;
 const password = document.getElementById("password").value;
 
@@ -23,8 +24,6 @@ const result = fetch(url, {
   })
   .then(response => response.json())
   .then(res => {
-    console.log(res)
-
     let error = res.error;
     let status = res.status;
     if(status != 200) {
@@ -44,8 +43,6 @@ const result = fetch(url, {
     }
   })
   .catch(e => console.log(e))
-
-  console.log(result)
 }
 
 
