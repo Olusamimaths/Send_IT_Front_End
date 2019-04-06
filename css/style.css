@@ -286,6 +286,16 @@ body {
     text-decoration: underline;
   }
   
+  #detail_list {
+    list-style-type: disc;
+    font-size: 1rem;
+  }
+
+  .bolded {
+    font-weight: bold;
+    color: rgb(85, 10, 10)
+  }
+
   /***** MEDIA QUERIES FOR RESPONSIVENES ***/
   @media screen and (max-width: 700px) {
     #column {
