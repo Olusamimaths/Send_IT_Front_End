@@ -2,16 +2,17 @@ function postData() {
     const token = localStorage.getItem("token");
     const parcelId = document.getElementById('order_id').value
     const url = `https://sendit-olusola.herokuapp.com/api/v1/parcels/${parcelId}/destination`;
-// clearing up the error message 
+// clearing up the error and success messages
 document.getElementById('error_message').innerHTML = "";
-
+document.getElementById('success').innerHTML = "";
+    
 const destination = document.getElementById("destination").value;
 
 let data = {
   to: destination
 }
-
-const result = fetch(url, {
+if(parcelId){
+  const result = fetch(url, {
     credentials: 'same-origin', // 'include', default: 'omit'
     method: 'PATCH', // 'GET', 'PUT', 'DELETE', etc.
     body: JSON.stringify(data), // Coordinate the body type with 'Content-Type'
@@ -38,6 +39,11 @@ const result = fetch(url, {
     }
   })
   .catch(e => console.log(e))
+} else {
+  document.getElementById('error_message').innerHTML = "Please input a parcel id";
+}
+
+
 }
 
 
