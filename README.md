@@ -7,7 +7,7 @@ Available here https://olusamimaths.github.io/Send_IT_Front_End/index.html
   - Home page at  https://olusamimaths.github.io/Send_IT_Front_End/index.html
   - Sign up page at https://olusamimaths.github.io/Send_IT_Front_End/sign_up.html
   - Sign in page at https://olusamimaths.github.io/Send_IT_Front_End/login.html
-  - Pages requirining authentication:
+  - Pages requiring authentication for access:
     - Profile page
     - Create Parcel Page
     - Change Parcel Destination Page
