@@ -35,8 +35,6 @@ const result = fetch(url, {
 
   })
   .catch(e => console.log(e))
-
-  console.log(result)
 }
 
 
