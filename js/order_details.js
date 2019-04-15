@@ -34,7 +34,7 @@ function getData() {
                       </ul>
                   `;
           } else {
-            document.getElementById('detail_container').innerHTML = res.error;
+            document.getElementById('detail_container').innerHTML = `<h3 style="color:red">${res.error}</h3>`;
           }
       })
       .catch(e => console.log(e))
