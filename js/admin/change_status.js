@@ -41,7 +41,7 @@ if(parcelId){
 
     }
     if(error){
-        document.getElementById('error_message').innerHTML = error;
+        document.getElementById('error_message').innerHTML = error.map(e => `<li>${e}</li>`);;
     }
   })
   .catch(e => console.log(e))

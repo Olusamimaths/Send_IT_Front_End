@@ -24,7 +24,7 @@ const result = fetch(url, {
   })
   .then(response => response.json())
   .then(res => {
-    let error = res.error;
+    let errors = res.error;
     let status = res.status;
     if(status != 200) {
         document.getElementById('error_message').innerHTML = res.message;
@@ -39,8 +39,8 @@ const result = fetch(url, {
         // redirect to profile page
          window.location.href = "profile.html";
     }
-    if(error){
-        document.getElementById('error_message').innerHTML = error;
+    if(errors){
+        document.getElementById('error_message').innerHTML = errors.map(error => `<li>${error}</li>`);
     }
   })
   .catch(e => console.log(e))
